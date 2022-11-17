@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>List of Movies</h1>
+<ul>
+  <% @lists.each do |list| %>
+    <li> Title:
+    <%= list.title %>
+    </li>
+      <li> Overview:
+    <%= list.overview %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to 'Lists', lists_path %>
